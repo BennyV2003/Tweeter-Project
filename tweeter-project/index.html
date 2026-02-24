@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tweeter</title>
+
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <span class="logo" aria-hidden="true">🐦</span>
+      <span class="brand">Tweeter</span>
+    </div>
+  </header>
+
+
+  <main class="page">
+    <section class="card composer">
+      <div class="avatar" aria-hidden="true"></div>
+
+      <div class="composer-right">
+        <textarea id="tweetInput" placeholder="What's happening?"></textarea>
+
+        <div class="composer-row">
+          <p id="charLabel" class="char-label">160 char remaining</p>
+          <button id="tweetBtn" class="tweet-btn" type="button">tweeet</button>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="card tweet">
+      <div class="avatar" aria-hidden="true"></div>
+
+      <div class="tweet-body">
+        <div class="tweet-header">
+          <span class="name">Benny Villarreal</span>
+          <span class="handle">@bennyv</span>
+          <span class="dot">•</span>
+          <span class="time">Feb 22, 2026</span>
+        </div>
+
+        <p class="tweet-text">
+          Hey, wokring with front-end is fun!! 😄
+        </p>
+
+        <div class="tweet-actions" aria-label="tweet actions">
+          <button class="icon-btn" type="button" title="comment">💬</button>
+          <button class="icon-btn" type="button" title="retweet">🔁</button>
+          <button class="icon-btn" type="button" title="link">🔗</button>
+          <button class="icon-btn" type="button" title="upload">⤴️</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+ 
+  <script src="js/script.js"></script>
+</body>
+</html>

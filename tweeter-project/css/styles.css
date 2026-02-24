@@ -1,0 +1,182 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #eaf4ff;
+  color: #0f172a;
+}
+
+
+.topbar {
+  width: 100%;
+  background: white;
+  border-bottom: 1px solid #dbeafe;
+}
+
+.topbar-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.brand {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+
+.page {
+  max-width: 900px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+
+
+.card {
+  background: white;
+  border: 1px solid #dbeafe;
+  border-radius: 14px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+
+.avatar {
+  width: 44px;
+  height: 44px;
+  background: #cbd5e1;
+  border-radius: 50%;
+  flex: 0 0 auto;
+}
+
+
+.composer {
+  display: flex;
+  gap: 12px;
+}
+
+.composer-right {
+  flex: 1;
+}
+
+textarea {
+  width: 100%;
+  min-height: 90px;
+  resize: vertical;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  font-size: 14px;
+  outline: none;
+}
+
+textarea:focus {
+  border-color: #60a5fa;
+}
+
+.composer-row {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.char-label {
+  margin: 0;
+  font-size: 13px;
+  color: #334155;
+}
+
+/* button styling */
+.tweet-btn {
+  background: #3b82f6;
+  border: none;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.tweet-btn:hover {
+  background: #2563eb;
+}
+
+.tweet-btn:active {
+  transform: translateY(1px);
+}
+
+.tweet-btn:disabled {
+  background: #94a3b8;
+  cursor: not-allowed;
+}
+
+/* tweet sample */
+.tweet {
+  display: flex;
+  gap: 12px;
+}
+
+.tweet-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: #475569;
+}
+
+.name {
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.handle, .time, .dot {
+  color: #64748b;
+}
+
+.tweet-text {
+  margin: 8px 0 10px;
+  font-size: 14px;
+}
+
+.tweet-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.icon-btn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 6px 8px;
+  border-radius: 10px;
+}
+
+.icon-btn:hover {
+  background: #eff6ff;
+}
+
+
+@media (max-width: 600px) {
+  .composer, .tweet {
+    flex-direction: column;
+  }
+
+  .composer-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .tweet-btn {
+    width: 100%;
+  }
+}
