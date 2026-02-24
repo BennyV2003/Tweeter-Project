@@ -95,7 +95,7 @@ textarea:focus {
   color: #334155;
 }
 
-/* button styling */
+
 .tweet-btn {
   background: #3b82f6;
   border: none;
@@ -119,7 +119,7 @@ textarea:focus {
   cursor: not-allowed;
 }
 
-/* tweet sample */
+
 .tweet {
   display: flex;
   gap: 12px;
